@@ -1,0 +1,11 @@
+name: display message on push
+
+on:
+    push:
+  jobs:
+       show message:
+           run on: ubuntu-latest
+
+  steps:
+        -name: Print message
+         run:echo "push detected. CI is running!"
